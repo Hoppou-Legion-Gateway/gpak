@@ -1,10 +1,23 @@
 {
-	"name": "@graphpack/lib",
+	"name": "@gpak/parser",
 	"version": "0.1.0",
 	"description": "A declarative texture channel packer and material generator for Unity.",
 	"type": "module",
-	"exports": "./src/index.ts",
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist",
+		"src"
+	],
 	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
 		"test": "vitest run"
 	},
 	"keywords": [

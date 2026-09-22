@@ -175,15 +175,27 @@ importers:
       lefthook:
         specifier: ^2.1.14
         version: 2.1.14
-      sharp:
-        specifier: ^0.35.4
-        version: 0.35.4(@types/node@26.6.2)
       typescript:
         specifier: ^7.0.2
         version: 7.0.2
       vitest:
         specifier: ^5.0.1
         version: 5.0.1(@types/node@26.6.2)(vite@8.3.0(@types/node@26.6.2))
+
+  packages/cli:
+    dependencies:
+      '@graphpack/cli':
+        specifier: 'link:'
+        version: 'link:'
+      '@graphpack/lib':
+        specifier: workspace:*
+        version: link:../lib
+
+  packages/lib:
+    dependencies:
+      sharp:
+        specifier: ^0.35.4
+        version: 0.35.4(@types/node@26.6.2)
 
 packages:
 

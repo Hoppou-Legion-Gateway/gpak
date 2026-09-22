@@ -1,17 +1,10 @@
 {
 	"name": "graphpack",
 	"version": "0.1.0",
-	"description": "A declarative texture channel packer and material generator for Unity.",
-	"main": "src/main.ts",
+	"description": "A declarative texture channel packer and material generator for Unity (monorepo).",
 	"scripts": {
-		"test": "vitest"
+		"test": "vitest run"
 	},
-	"keywords": [
-		"texture packer",
-		"material",
-		"unity",
-		"declarative"
-	],
 	"author": "Hoppou Legion Gateway",
 	"license": "MIT",
 	"devEngines": {
@@ -27,7 +20,6 @@
 		"@biomejs/biome": "^2.5.14",
 		"@types/node": "^26.6.2",
 		"lefthook": "^2.1.14",
-		"sharp": "^0.35.4",
 		"typescript": "^7.0.2",
 		"vitest": "^5.0.1"
 	}

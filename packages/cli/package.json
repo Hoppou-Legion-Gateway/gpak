@@ -1,0 +1,24 @@
+{
+	"name": "@graphpack/cli",
+	"version": "0.1.0",
+	"description": "Command-line interface for graphpack, a declarative texture channel packer for Unity.",
+	"type": "module",
+	"bin": {
+		"gpak": "./src/main.ts"
+	},
+	"scripts": {
+		"test": "vitest run"
+	},
+	"keywords": [
+		"texture packer",
+		"cli",
+		"unity",
+		"declarative"
+	],
+	"author": "Hoppou Legion Gateway",
+	"license": "MIT",
+	"dependencies": {
+		"@graphpack/cli": "link:",
+		"@graphpack/lib": "workspace:*"
+	}
+}

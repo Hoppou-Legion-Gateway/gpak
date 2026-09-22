@@ -1,0 +1,21 @@
+{
+	"name": "@graphpack/lib",
+	"version": "0.1.0",
+	"description": "A declarative texture channel packer and material generator for Unity.",
+	"type": "module",
+	"exports": "./src/index.ts",
+	"scripts": {
+		"test": "vitest run"
+	},
+	"keywords": [
+		"texture packer",
+		"material",
+		"unity",
+		"declarative"
+	],
+	"author": "Hoppou Legion Gateway",
+	"license": "MIT",
+	"dependencies": {
+		"sharp": "^0.35.4"
+	}
+}

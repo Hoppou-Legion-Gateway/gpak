@@ -4,7 +4,7 @@ pre-commit:
   parallel: true
   commands:
     biome:
-      glob: "*.{md,yml,json,jsonc}"
+      glob: "*.{json,jsonc}"
       run: pnpm biome format --write {staged_files}
       stage_fixed: true
     vitest:

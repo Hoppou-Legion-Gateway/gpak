@@ -24,7 +24,7 @@
 	},
 	"oclif": {
 		"bin": "gpak",
-		"commands": "./dist/commands",
+		"commands": "./src/commands",
 		"dirname": "gpak",
 		"topicSeparator": " "
 	},

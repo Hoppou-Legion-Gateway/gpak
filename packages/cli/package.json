@@ -4,7 +4,7 @@
 	"description": "Command-line interface for graphpack, a declarative texture channel packer for Unity.",
 	"type": "module",
 	"bin": {
-		"gpak": "./src/main.ts"
+		"gpak": "./bin/run.js"
 	},
 	"scripts": {
 		"test": "vitest run"
@@ -19,6 +19,17 @@
 	"license": "MIT",
 	"dependencies": {
 		"@graphpack/cli": "link:",
-		"@graphpack/lib": "workspace:*"
+		"@graphpack/lib": "workspace:*",
+		"@oclif/core": "^5.0.0"
+	},
+	"oclif": {
+		"bin": "gpak",
+		"commands": "./dist/commands",
+		"dirname": "gpak",
+		"topicSeparator": " "
+	},
+	"devDependencies": {
+		"@types/node": "^18.19.130",
+		"ts-node": "^10.9.2"
 	}
 }

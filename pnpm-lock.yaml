@@ -187,12 +187,9 @@ importers:
 
   packages/cli:
     dependencies:
-      '@graphpack/cli':
-        specifier: 'link:'
-        version: 'link:'
-      '@graphpack/lib':
+      '@gpak/parser':
         specifier: workspace:*
-        version: link:../lib
+        version: link:../parser
       '@oclif/core':
         specifier: ^5.0.0
         version: 5.0.0
@@ -204,7 +201,7 @@ importers:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@18.19.130)(typescript@7.0.2)
 
-  packages/lib:
+  packages/parser:
     dependencies:
       sharp:
         specifier: ^0.35.4

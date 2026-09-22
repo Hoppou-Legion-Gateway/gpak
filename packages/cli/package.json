@@ -1,12 +1,22 @@
 {
-	"name": "@graphpack/cli",
+	"name": "gpak",
 	"version": "0.1.0",
 	"description": "Command-line interface for graphpack, a declarative texture channel packer for Unity.",
 	"type": "module",
+	"engines": {
+		"node": ">=18"
+	},
 	"bin": {
 		"gpak": "./bin/run.js"
 	},
+	"files": [
+		"bin",
+		"dist",
+		"src"
+	],
 	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"prepack": "pnpm build",
 		"test": "vitest run"
 	},
 	"keywords": [
@@ -18,15 +28,27 @@
 	"author": "Hoppou Legion Gateway",
 	"license": "MIT",
 	"dependencies": {
-		"@graphpack/cli": "link:",
-		"@graphpack/lib": "workspace:*",
+		"@gpak/parser": "workspace:*",
 		"@oclif/core": "^5.0.0"
 	},
 	"oclif": {
 		"bin": "gpak",
-		"commands": "./src/commands",
+		"commands": "./dist/commands",
 		"dirname": "gpak",
-		"topicSeparator": " "
+		"topicSeparator": " ",
+		"theme": {
+			"sectionHeader": "cyanBright",
+			"bin": "greenBright",
+			"command": "green",
+			"topic": "green",
+			"flag": "yellow",
+			"flagDefaultValue": "gray",
+			"flagOptions": "gray",
+			"flagRequired": "red",
+			"alias": "gray",
+			"dollarSign": "gray",
+			"version": "magentaBright"
+		}
 	},
 	"devDependencies": {
 		"@types/node": "^18.19.130",

@@ -1,0 +1,12 @@
+# lefthook.yml
+
+pre-commit:
+  parallel: true
+  commands:
+    biome:
+      glob: "*.{md,yml,json,jsonc}"
+      run: pnpm biome format --write {staged_files}
+      stage_fixed: true
+    vitest:
+      glob: "*.{ts,js}"
+      run: pnpm vitest run

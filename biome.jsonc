@@ -1,0 +1,37 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+
+	"files": {
+		"includes": ["**"],
+		"ignoreUnknown": true
+	},
+
+	// Formatter config for all supported formats
+	"formatter": {
+		"trailingNewline": false,
+		"indentStyle": "tab"
+	},
+
+	// Formatter config for Javascript / Typescript
+	"javascript": {
+		"formatter": {
+			"trailingCommas": "all",
+			"semicolons": "always",
+			"indentStyle": "tab"
+		}
+	},
+
+	// Formatter config for JSON
+	"json": {
+		"formatter": {
+			"indentStyle": "tab"
+		}
+	},
+
+	// Version control integration
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	}
+}

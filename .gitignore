@@ -1,6 +1,9 @@
 # Node Modules Folder
 node_modules/
 
+# Build output
+dist/
+
 # Vitest reports and artifacts
 .vitest/
 

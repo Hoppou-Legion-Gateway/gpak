@@ -6,3 +6,6 @@ node_modules/
 
 # Agents
 .pi/
+
+# Other
+/tmp/
